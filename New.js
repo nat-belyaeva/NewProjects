@@ -45,6 +45,66 @@
 //     { firstName: 'Victoria', lastName: 'T.', country: 'Puerto Rico', continent: 'Americas', age: 70, language: 'Python' },
 // ]));
 
-function findAdmin(list, lang) {
+// function findNum(N) {
+//     let arr = [] ;
+//     let res = [];
+//     let arrNew = [];
+//     for (let i = 0; i <= N; i++) {
+//         arr.push(i * i);
+//         console.log(arr);
+//         arrNew.push(i);
+//         //console.log(arrNew)
+//     }
+//     for (let i = 0; i < arr.length; i++) {
+//         for(let j = 0; j < arrNew.length; j++) {
+//             if( arr[i] % 100  !== arrNew[j]) {
+//             arrNew.shift()
+//                console.log(arrNew);
+//         }
+//
+//         }
+//     }
+// return arrNew;
+// }
+//
+// console.log(findNum(37));
+
+// function sum (arr, arr1) {
+//     let res = [];
+//     let remains = 0;
+//     let maxArr = Math.max(arr.length, arr1.length);
+//     //console.log(maxArr)
+//
+//     for (let i = 0; i < maxArr; i++) {
+//         let summa = (arr[arr.length - 1 - i] || 0) +  (arr1[arr1.length - 1 - i] || 0) + remains
+//
+//         if (summa >= 10) {
+//             remains = Math.trunc(summa / 10);
+//             res.unshift(summa % 10)
+//         } else {
+//             remains = 0
+//             res.unshift(summa);
+//         }
+//     }
+//
+//     return Number(res.join(''))
+//     console.log(res)
+// }
+//
+// console.log(sum([1,2,3,4,5], [9,9,9]))
+
+
+function findDeletedNumber(arr, mixArr) {
+    mixArr.sort((a, b) => a - b)
+    console.log(mixArr)
+let res = 0
+     for (let i = 0; i < mixArr.length; i++) {
+
+
+        }
+
+return arr.length === mixArr.length ? 0 : res;
 
 }
+
+console.log(findDeletedNumber([1,2,3,4,5], [3,4,1,5]));

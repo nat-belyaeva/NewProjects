@@ -350,14 +350,4 @@
 // console.log(typeof variable);    // "number"
 // console.log(typeof (typeof variable));      // "string"
 
-
-
-
-
-
-
-
-
-
-
 //
