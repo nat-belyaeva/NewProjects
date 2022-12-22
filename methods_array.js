@@ -578,9 +578,9 @@
 // Этот метод проще всего понять на примере.
 // Тут мы получим сумму всех элементов массива всего одной строкой:
 
-let arr = [1, 2, 3, 4, 5];
-let result = arr.reduce((sum, current) => sum * current, 0);
-console.log(result);
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.reduce((sum, current) => sum * current, 0);
+// console.log(result);
 
 // Давайте детальнее разберём, как он работает.
 // При первом запуске sum равен initial (последний аргумент reduce), то есть 0,
@@ -692,10 +692,10 @@ console.log(result);
 //====================================================================
 //Уникальные элементы в массиве.
 
-//1. Дан массив чисел arr. Вернуть новый массив, в котором будут содержаться только уникальные значения элементов (у этих элементов нет дубликатов в массиве).
+// 1. Дан массив чисел arr. Вернуть новый массив, в котором будут содержаться только уникальные значения элементов (у этих элементов нет дубликатов в массиве).
 
 // const arr = [-1, -2, 0, -2, 7, 7, 7, -1, 0, 8, 3, 4, 2, 2];
-
+//
 // const result = arr.filter(el => arr.indexOf(el) === arr.lastIndexOf(el));
 // console.log(result);
 
@@ -712,15 +712,15 @@ console.log(result);
 // 1. только повторяющиеся элементы (дубликаты).
 
 // const arr = [-1, -2, 0, -2, 7, 7, 7, -1, 0, 8, 3, 4, 2, 2];
-
+//
 // const result = arr.filter(el => arr.indexOf(el) !== arr.lastIndexOf(el));
-
+//
 // console.log(result); // [-1, 2, 0, 2, 7, 7, 7, -1, 0]
 
 // 2.элементы встречаются только один раз.
 
 // const arr = [-1, 2, 0, 2, 7, 7, 7, -1, 0, 8, 3, 4];
-
+//
 // const result = arr.filter((el, i) => i === arr.indexOf(el));
 // console.log(result); // [-1, 2, 0, 7, 8, 3, 4],
 
@@ -734,19 +734,27 @@ console.log(result);
 // const result = arr.filter((el, i) => i !== arr.indexOf(el) && i === arr.lastIndexOf(el));
 // console.log(result); // [2, 7, -1, 0]
 
-
+// const arr3 = [-1, 2, 0, 2, 7, 7, 7, -1, 0, 8, 3, 4];
+// const newArray3 = [];
+// arr3.forEach((number, index) => {
+//     if (index === arr3.lastIndexOf(number) && index !== arr3.indexOf(number)) {
+//         newArray3.push(arr3[index]);
+//     }
+// });
+// console.log(newArray3);
 
 //====================================================================
 //sum of nums in string inside the arr using methods
 
-// const arr = ['1 32 -3 n -5 hj n'];
+//  const arr = ['1 32 -3 n -5 hj n'];
 //
 // let res = arr.join()
-//     .split(' ')
-//     .map(el => +el)
-//     .filter(el => !isNaN(el))
-//     .reduce((acc, curr) => acc + curr);
+//       .split(' ')
+//       .map(el => +el)
+     //  .filter(el => !isNaN(el))
+//      .reduce((acc, curr) => acc + curr);
 // console.log(res);
+// console.log(typeof res)
 
 
 
@@ -757,11 +765,20 @@ console.log(result);
 
 
 
-
-
-
-
-
+// const arr = [-1, -2, 0, -2, 7, 7, 7, -1, 0, 8, 3, 4, 2, 2];
+// const newArr = [];
+// for (let i=0; i<arr.length; i++) {
+//     let notDuplicate = true;
+//     for (let j=0; j<i; j++) {
+//         if (arr[i] === arr[j]) {
+//             notDuplicate = false
+//         }
+//     } if (notDuplicate) {
+//         newArr.push(arr[i]);
+//     }
+//
+// };
+// console.log(newArr)
 
 
 

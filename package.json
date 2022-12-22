@@ -1,0 +1,24 @@
+{
+  "name": "newprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Loops.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nat-belyaeva/NewProjects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nat-belyaeva/NewProjects/issues"
+  },
+  "homepage": "https://github.com/nat-belyaeva/NewProjects#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0",
+    "request": "^2.88.2"
+  }
+}
