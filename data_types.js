@@ -39,10 +39,10 @@
 // console.log(45e-3);
 //
 // особые случаи, относящиеся к типу number: Infinity; -Infinity; NaN
-console.log(5 / 0);
-console.log(-5 / 0);
-console.log('five' / 0);
-//
+// console.log(5 / 0);
+// console.log(-5 / 0);
+// console.log('five' / 0);
+// //
 // ----  + / -  ----
 //
 // let m = 8;    //
@@ -77,8 +77,11 @@ console.log('five' / 0);
 // console.log('word' * 7);   // NaN
 // console.log(+'g');
 // console.log(4 / '');      //  4 / 0 =  Infinity
+// let a = '5' + 4
+// console.log('5' / 4);        //  54
 //
-// console.log('5' + 4);         //   54
+//
+// console.log(typeof a)
 // console.log('a' + 'b');       //   ab
 //
 //
@@ -153,15 +156,15 @@ console.log('five' / 0);
 //
 // --- Операции сравнения для bigint ---
 //
-console.log(35n == 35n);
-console.log(35n > 12n);
-console.log(35n <= 12n);
-
-console.log(35n > 12);
-console.log(35n <= 12);
-
-console.log(35n == 35);     //
-console.log(35n === 35);    //
+// console.log(35n == 35n);
+// console.log(35n > 12n);
+// console.log(35n <= 12n);
+//
+// console.log(35n > 12);
+// console.log(35n <= 12);
+//
+// console.log(35n == 35);     //
+// console.log(35n === 35);    //
 //
 // console.log(isNaN(35n));    //
 //

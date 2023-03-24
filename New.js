@@ -136,15 +136,46 @@
 // console.log(arr)
 // console.log(arr.length)
 
-function fib(n) {
-let fn = [0, 1]
+// function skiponacci(n) {
+//     let arr = [1, 1];
+//
+//     for (let i = 2; i <= n; i++) {
+//         const buff = arr[i - 1] + arr[i - 2];
+//         arr.push(buff)
+//     }
+//  arr.join(' ');
+//     for (let i = 0; i < arr.length; i++) {
+//         if(i % 2 === 1) {
+//             arr[i] = 'skip'
+//
+//         }
+//     }
+//     arr.pop();
+//     return arr
+// }
+//
+// // console.log(skiponacci(1));
+// function findDeletedNumber(arr, mixArr) {
+//    let newArr =  arr.concat(mixArr)
+//     console.log(newArr)
+//     let res= newArr.filter(el => newArr.indexOf(el) === newArr.lastIndexOf(el))
+//     return res.length === 0 ? res.length : res[0]
+//
+// }
+//
+// console.log(findDeletedNumber([1,2,3,4,5], [1,2,3,4,5]));
 
-         for (let i = 2; i < n; i++) {
+let a;
+let c = 9
+let str = 'Hi 5!'
+let b = true
+let y = 9 + '1'
+let x =  'a' - 6
 
-                 const buff = fn[i - 1] + fn[i - 2];
-                 fn.push(buff)
-             }
-     return n <= 0 &&  typeof  'error' : fn.join(' ');
-     }
+console.log(typeof a)
+console.log(typeof c)
+console.log(typeof str)
+console.log(typeof b)
+console.log(typeof y)
+console.log(typeof x)
 
-console.log(fib(0));
