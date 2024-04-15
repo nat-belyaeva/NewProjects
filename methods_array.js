@@ -310,7 +310,7 @@
 // 6. min + max in arr
 // const arr = [1, 10, 6, 160, 2, 5, 60];
 
-// let sum = arr.sort((a, b) => a - b)[0] + arr.sort((a, b) => b - a)[0];
+//[] let sum = arr.sort((a, b) => a - b)[0] + arr.sort((a, b) => b - a)[0];
 // console.log(sum); // 161
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
@@ -325,7 +325,8 @@
 // Если функция сравнения compareFunction предоставлена, элементы массива сортируются в соответствии с её возвращаемым значением. Если сравниваются два элемента a и b, то:
 
 // Если compareFunction(a, b) меньше 0, сортировка поставит a по меньшему индексу, чем b, то есть, a идёт первым.
-// Если compareFunction(a, b) вернёт 0, сортировка оставит a и b неизменными по отношению друг к другу, но отсортирует их по отношению ко всем другим элементам. Обратите внимание: стандарт ECMAscript не гарантирует данное поведение, и ему следуют не все браузеры (например, версии Mozilla по крайней мере, до 2003 года).
+// Если compareFunction(a, b) вернёт 0, сортировка оставит a и b неизменными по отношению друг к другу, но отсортирует их по отношению ко всем другим элементам. Обратите внимание:
+// стандарт ECMAscript не гарантирует данное поведение, и ему следуют не все браузеры (например, версии Mozilla по крайней мере, до 2003 года).
 
 // Если compareFunction(a, b) больше 0, сортировка поставит b по меньшему индексу, чем a.
 // Функция compareFunction(a, b) должна всегда возвращать одинаковое значение для определённой пары элементов a и b. Если будут возвращаться непоследовательные результаты, порядок сортировки будет не определён.
@@ -372,9 +373,9 @@
 
 // console.log(newArr);
 
-// ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
-//   console.log(`${item} is at index ${index} in ${array}`);
-// });
+["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+  console.log(`${item} is at index ${index} in ${array}`);
+});
 
 //=====================================================
 // .join()
@@ -412,7 +413,7 @@
 //
 // const arr = [1, 2, 3, 4, 5];
 
-// console.log(arr.slice());          //(0,0)
+//const arr = [1, 2, 3, 4, 5];          //(0,0)
 // console.log(arr.slice(1, 3));   //(1, 3)
 // console.log(arr.slice(2));      //(2, 0)
 // console.log(arr.slice(-2));     //(2 с конца)
@@ -710,7 +711,7 @@
 // Дубликаты в массиве
 
 // 1. только повторяющиеся элементы (дубликаты).
-
+//
 // const arr = [-1, -2, 0, -2, 7, 7, 7, -1, 0, 8, 3, 4, 2, 2];
 //
 // const result = arr.filter(el => arr.indexOf(el) !== arr.lastIndexOf(el));
@@ -718,7 +719,7 @@
 // console.log(result); // [-1, 2, 0, 2, 7, 7, 7, -1, 0]
 
 // 2.элементы встречаются только один раз.
-
+//
 // const arr = [-1, 2, 0, 2, 7, 7, 7, -1, 0, 8, 3, 4];
 //
 // const result = arr.filter((el, i) => i === arr.indexOf(el));
@@ -730,10 +731,10 @@
 //когда он появляется в массиве в последний раз.
 
 // const arr = [-1, 2, 0, 2, 7, 7, 7, -1, 0, 8, 3, 4];
-
+//
 // const result = arr.filter((el, i) => i !== arr.indexOf(el) && i === arr.lastIndexOf(el));
 // console.log(result); // [2, 7, -1, 0]
-
+//
 // const arr3 = [-1, 2, 0, 2, 7, 7, 7, -1, 0, 8, 3, 4];
 // const newArray3 = [];
 // arr3.forEach((number, index) => {
@@ -745,24 +746,16 @@
 
 //====================================================================
 //sum of nums in string inside the arr using methods
-
+//
 //  const arr = ['1 32 -3 n -5 hj n'];
 //
 // let res = arr.join()
-//       .split(' ')
-//       .map(el => +el)
+//        .split(' ')
+     //  .map(el => +el)
      //  .filter(el => !isNaN(el))
-//      .reduce((acc, curr) => acc + curr);
+     // .reduce((acc, curr) => acc + curr);
 // console.log(res);
 // console.log(typeof res)
-
-
-
-
-
-
-
-
 
 
 // const arr = [-1, -2, 0, -2, 7, 7, 7, -1, 0, 8, 3, 4, 2, 2];

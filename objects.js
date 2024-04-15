@@ -20,28 +20,28 @@
 // Имя свойства может состоять из нескольких слов, но тогда оно _обязательно_
 // должно быть заключено в кавычки:
 
-// let user = {
-//   name: "John",
-//   age: 30,
-//   "high school": true,
-// }
+let user = {
+  name: "John",
+  age: 30,
+  "high school": true,
+}
 
 //console.log(user.high school);  //ошибка
-//console.log(user);
+console.log(user["high school"]);
 
 // значение свойства age и name изменено:
-// user.age = 20;
-// user.name = 'Bill';
-// console.log(user);
+user.age = 20;
+user.name = 'Bill';
+console.log(user);
 
 // добавлено свойство address:
-// user.address = {
-//   city: 'SF',
-//   state: 'CA',
-//   country: 'USA',
-// }
-// console.log(user);
-//console.log(user.address.state);
+user.address = {
+  city: 'SF',
+  state: 'CA',
+  country: 'USA',
+}
+console.log(user);
+console.log(user.address.state);
 
 // ============================================
 //оператор delete:
@@ -109,32 +109,32 @@
 // ============================================================
 //Обращение к свойствам объекта
 
-// const customers = [
-//   {
-//     id: '01',
-//     personalInfo: {
-//       name: {
-//         first: 'John',
-//         last: 'Dow',
-//       },
-//     },
-//   },
-//   {
-//     id: '02',
-//     personalInfo: {
-//       name: {
-//         first: 'Jane',
-//         last: 'Dow',
-//       },
-//       dob: '01/01/1990',
-//       "contactInfo": {
-//         phone: '+123456789',
-//         email: null,
-//         address: null,
-//       },
-//     },
-//     purchases: [null],
-//   }];
+const customers = [
+  {
+    id: '01',
+    personalInfo: {
+      name: {
+        first: 'John',
+        last: 'Dow',
+      },
+    },
+  },
+  {
+    id: '02',
+    personalInfo: {
+      name: {
+        first: 'Jane',
+        last: 'Dow',
+      },
+      dob: '01/01/1990',
+      "contactInfo": {
+        phone: '+123456789',
+        email: null,
+        address: null,
+      },
+    },
+    purchases: [null],
+  }];
 
 // 1. Свойства 1-го уровня
 // console.log(customers.length);
@@ -171,15 +171,15 @@
 // console.log(user.age === undefined); // true означает "свойства нет"
 
 // ===== через оператор in
-// let obj = {
-//   firstName: 'Sofia',
-//   lastName: 'I.',
-//   age: 35,
-//   language: 'Java',
-//   newKey: undefined,
-//   undefined: false,
-//   job: null,
-// };
+let obj = {
+  firstName: 'Sofia',
+  lastName: 'I.',
+  age: 35,
+  language: 'Java',
+  newKey: undefined,
+  undefined: false,
+  job: null,
+};
 // console.log(obj);
 
 // console.log("firstName" in obj);
@@ -193,27 +193,27 @@
 
 //обращение, добавление на примере
 
-// let obj = {
-//   firstName: 'Sofia',
-//   lastName: 'I.',
-//   country: 'Argentina',
-//   continent: 'Americas',
-//   age: 35,
-//   language: 'Java'
-// };
-// let name = obj.firstName;
-// let language = obj.language;
+let obj = {
+  firstName: 'Sofia',
+  lastName: 'I.',
+  country: 'Argentina',
+  continent: 'Americas',
+  age: 35,
+  language: 'Java'
+};
+let name = obj.firstName;
+let language = obj.language;
 
-// console.log(name, language);
+console.log(name, language);
 
-// let a = `Hi ${name}, Do you like ${language}?`;
+let a = `Hi ${name}, Do you like ${language}?`;
 
-//  console.log(a);
+ console.log(a);
 
-// let newKey = 'hello';
-// obj[newKey] = a;      //
+let newKey = 'hello';
+obj[newKey] = a;      //
 
-// console.log(obj);
+console.log(obj);
 
 
 // =======================  цикл for ... in  ===================================
@@ -240,11 +240,11 @@
 
 
 // count salaries
-// let salaries = {
-//   John: 100,
-//   Ann: 160,
-//   Pete: 130
-// };
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+};
 
 // let sum = 0;
 // for(let key in salaries) {
@@ -254,11 +254,11 @@
 // console.log(sum); // 390
 
 
-// let obj = {
-//   width: 200,
-//   height: 300,
-//   title: "My menu"
-// };
+let obj = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
 
 // function multiplyNumeric(obj) {
 //   let res = 1;
@@ -301,8 +301,8 @@
 //                'KLMNO': 3,
 //                'PQRST': 4,
 //                'UVWXY': 5};
-
-
+//
+//
 // function nameScore(name){
 //   let str = name.toUpperCase();
 //   let count = 0;

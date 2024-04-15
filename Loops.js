@@ -301,7 +301,7 @@
 // }
 // ==========================================================================
 //
-// =====================while loop i++ at the begining of the execution
+// }
 //
 // you set your counter variable before the loop statement
 //
@@ -318,7 +318,7 @@
 // const arr = [];
 // let i = 0;
 // while(i < 3) {
-//     arr.push(i); //0, 1, 2
+//     arr.push(i);
 //     i++;
 // }
 // console.log(arr); //3

@@ -165,17 +165,28 @@
 //
 // console.log(findDeletedNumber([1,2,3,4,5], [1,2,3,4,5]));
 
-let a;
-let c = 9
-let str = 'Hi 5!'
-let b = true
-let y = 9 + '1'
-let x =  'a' - 6
+// let a;
+// let c = 9
+// let str = 'Hi 5!'
+// let b = true
+// let y = 9 + '1'
+// let x =  'a' - 6
+//
+// console.log(typeof a)
+// console.log(typeof c)
+// console.log(typeof str)
+// console.log(typeof b)
+// console.log(typeof y)
+// console.log(typeof x)
 
-console.log(typeof a)
-console.log(typeof c)
-console.log(typeof str)
-console.log(typeof b)
-console.log(typeof y)
-console.log(typeof x)
-
+// function solve(value) {
+//     let res = ''
+//     for (let i  = 0; i < value.length; i++){
+//         if(value.charCodeAt(i) >= 48 && value.charCodeAt(i) <= 57) {
+//             res += value[i]
+//         }
+//     }
+//     return Number(res)
+// }
+//
+// console.log(solve("aa1bb2cc3dd"))
